@@ -1,0 +1,101 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+body{
+  background: #fdfdfb;
+  padding: 0 10px;
+}
+.wrapper{
+  max-width: 700px;
+  width: 100%;
+  background: rgb(230, 227, 227);
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+
+.wrapper .form .inputfield .btn{
+    
+    margin-left: 50%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #8f8d8a;
+  color: rgb(22, 21, 21);
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    border-radius: 25%;
+} 
+  
+.material-icons { 
+    border-right: solid gray;
+    padding: 10px; 
+    background-color: rgb(216, 215, 215);
+    color: rgb(154, 156, 154); 
+    min-width: 50px; 
+    text-align: center; 
+    height: 38px;
+} 
+  
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: left; 
+    padding-left: 50px;
+} 
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}

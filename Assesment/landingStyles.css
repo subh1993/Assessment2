@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(228, 226, 226);
+}
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  
+  
+}
+*{
+    box-sizing: border-box;
+}
+#toolbar{
+    background-color:rgb(228, 226, 226);
+    height: 70px;
+    width: 100%;
+    color: #333333;
+   
+    
+}
+#toolbar-heading{
+    padding-top: 10%;
+    float: left;
+    height: 20%;
+    font-family: 'Ranchers', cursive;
+    padding: 20px;
+    margin: auto;
+}
+#toolbar-buttons{
+    float: right;
+    padding: 20px;
+
+}
+button{
+    border-radius: 12px;
+    height: 30px;
+    width: 80px;
+}
+button:hover
+{
+background-image:none ;
+background-color: royalblue ;
+color: white;
+}
+.signup-pannel{
+    
+    width: 70%;
+    
+    max-width: 900px;
+    margin:  auto;
+    background-color: rgb(214, 218, 224);
+
+}
+h1{
+    font-family: 'Ranchers', cursive;
+   
+    margin: auto;
+}
+#desc{
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+    text-align: center;
+   
+}
+.signup-pannel-col{
+    padding-top: 2%;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 2%;
+  
+}
+#sign-btn{
+    background-color: rgb(124, 238, 124);
+    margin:  auto;
+    border-radius: 12px;
+    height: 30px;
+    width: 150px;
+}
+#launch-btn{
+    background-color:royalblue;
+    margin:  auto;
+    border-radius: 12px;
+    height: 30px;
+    width: 250px;
+}
+#launch-btn:hover{
+    background-color: rgb(226, 146, 25) !important;
+    color:white !important;
+}
+#sign-btn:hover{
+    background-color: rgb(6, 99, 42);
+    color:white;
+}
+.left-col{
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+.right-col{
+    padding: 20px;
+    width: 50%;
+    float: right;
+}
+
+h4{
+    font-family: 'Bebas Neue', cursive;
+}
+.item-desc{
+    font-family: 'Satisfy', cursive;
+}
+.down-pannel{
+    margin: auto;
+    background-color:rgb(228, 226, 226);
+    height: 400px;
+    width: 100%;
+    color: #333333;
+    border-bottom: solid;
+    
+
+}
+.input-icons i { 
+    position: absolute; 
+    
+} 
+  
+.input-icons { 
+    width: 100%; 
+    
+    
+} 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+    
+    
+    
+    
+    
+     
+    

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    
+    <form name="myform" class="form" onsubmit="return validateform()">
+       <div class="inputfield">
+        
+          <label>Full Name</label>
+          <div class="input-icons"> 
+            <i class="material-icons">person</i> 
+            <input class="input-field" 
+                   type="text" name="name"
+                   placeholder="Full Name"> 
+        </div> 
+       </div>  
+        <div class="inputfield">
+          <label>Address Line 1 </label>
+          <div class="input-icons"> 
+            <i class="material-icons">perm_contact_calendar</i> 
+            <input class="input-field" 
+                   type="text" name="address1"
+                   placeholder="Address Line 1 "> 
+        </div> 
+       </div>  
+       <div class="inputfield">
+          <label>Address Line 2</label>
+          <div class="input-icons"> 
+            <i class="material-icons">perm_contact_calendar</i> 
+            <input class="input-field" 
+                   type="text" name="address2"
+                   placeholder="Address Line 2"> 
+        </div> 
+       </div>  
+      <div class="inputfield">
+          <label>City</label>
+          <div class="input-icons"> 
+            <i class="material-icons">location_city</i> 
+            <input class="input-field" 
+                   type="text" name="city"
+                   placeholder="City"> 
+        </div> 
+       </div> 
+        <div class="inputfield">
+          <label>State/Province/Region</label>
+          <div class="input-icons"> 
+            <i class="material-icons">place</i> 
+            <input class="input-field" 
+                   type="text" name="state"
+                   placeholder="State/Province/Region"> 
+        </div> 
+       </div> 
+        <div class="inputfield">
+          <label>Postal Code/ZIP</label>
+          <div class="input-icons"> 
+            <i class="material-icons">local_post_office</i> 
+            <input class="input-field" 
+                   type="text" name="pin"
+                   placeholder="Postal Code/ZIP"> 
+        </div> 
+       </div> 
+      <div class="inputfield">
+          <label>Country</label>
+          <div class="input-icons"> 
+            <i class="material-icons">map</i> 
+            <select class="input-field" 
+                   name="country">
+                <option selected="Country">Country</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Nepal">Nepal</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                </select> 
+        </div> 
+       </div> 
+      <div class="inputfield">
+          <label>Email</label>
+          <div class="input-icons"> 
+            <i class="material-icons">attach_email</i> 
+            <input class="input-field" 
+                   type="text" name="email"
+                   placeholder="Email"> 
+        </div> 
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <div class="input-icons"> 
+            <i class="material-icons">call</i> 
+            <input class="input-field" 
+                   type="text" name="phoneNumber"
+                   placeholder="Phone Number"> 
+        </div> 
+       </div> 
+      
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn" >
+      </div>
+    </form>
+</div>	
+<script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var address1 = document.myform.address1.value;
+    var address2 = document.myform.address2.value;
+    var city = document.myform.city.value;
+    var state = document.myform.state.value;
+    var pin = document.myform.pin.value;
+    var country = document.myform.country.value;
+    var email = document.myform.email.value;
+    var phoneNumber =document.myform.phoneNumber.value;
+      
+    if (name==null || name=="" || name=="Full Name"){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(address1==null || address1=="" || address1=="Address Line 1"){  
+      alert("Address Line 1 cannot be blank");  
+      return false;  
+      }else if(address2==null || address2=="" || address2=="Address Line 2"){  
+      alert("Address Line 2 cannot be blank");  
+      return false;  
+      }else if(city==null || city=="" || city=="City"){  
+      alert("City cannot be blank");  
+      return false;  
+      }else if(state==null || state=="" || state=="State/Province/Region"){  
+      alert("State cannot be blank");  
+      return false;  
+      }else if(pin==null || pin=="" || pin.length>6 || pin.length<6 || pin == "Postal Code/ZIP"){  
+      alert("ZIP code cannot be blank or Invalid");  
+      return false;  
+      }else if(country==null || country=="" || country=="Country"){  
+      alert("Country cannot be blank");  
+      return false;  
+      }else if(email==null || email=="" || email=="Email"){  
+      alert("Email cannot be blank");  
+      return false;  
+      }else if(phoneNumber ==null || phoneNumber == "" || phoneNumber.length < 10 || phoneNumber == "Phone Number"){
+          alert("Phone Number cannot be blank or Invalid")
+      } alert("Thanks")
+
+    }  
+    </script>  	
+</body>
+</html>
